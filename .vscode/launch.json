@@ -8,6 +8,27 @@
             "mainClass": "com.bigdecimal.kafkaproducer.KafkaproducerApplication",
             "projectName": "kafkaproducer",
             "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=38629 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=kafkaproducer"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-KafkaconsumerApplication<kafkaconsumer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.bigdecimal.kafkaconsumer.KafkaconsumerApplication",
+            "projectName": "kafkaconsumer",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-KafkaconsumerApplication<kafkaconsumer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.bigdecimal.kafkaproducer.KafkaconsumerApplication",
+            "projectName": "kafkaconsumer",
+            "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
     ]

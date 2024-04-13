@@ -1,13 +1,5 @@
-server:
-    port: 8082
 spring:
     application:
         name: kafkaproducer
-    kafka:
-        producer:
-            bootstrap-servers: localhost:9094
     config:
         import: configserver:http://localhost:8888
-app:
-    messaging:
-        topic: springboot-string-topic
